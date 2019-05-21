@@ -1,0 +1,22 @@
+{
+  "name": "mcrm-jsapi",
+  "version": "0.0.1",
+  "description": "Secondary encapsulation using WebViewJavascriptBridge",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyb12522/mcrm-jsapi.git"
+  },
+  "keywords": [
+    "jsapi"
+  ],
+  "author": "bob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xyb12522/mcrm-jsapi/issues"
+  },
+  "homepage": "https://github.com/xyb12522/mcrm-jsapi#readme"
+}
