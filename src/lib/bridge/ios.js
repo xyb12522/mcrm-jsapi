@@ -46,16 +46,20 @@ var h5IosBridge = function(namespace, callObj) {
             var bridgeFunc = (bridge) => {
                 bridge.callHandler(namespace, Object.assign({}, obj), function(data) {
                     data = data || {};
+                    // var text =document.createElement("TEXT");
+                    // var t = document.createTextNode(JSON.stringify(data));
+                    // text.appendChild(t);
+                    // document.querySelector('#message').appendChild(text);
                     if (data.code == "0") {
                         if (typeof obj.onSuccess === "function") {
-                            obj.onSuccess.call(null, data.msg);
+                            obj.onSuccess.call(null, data.result);
                         }
                         resolve(data.result);
                     } else {
                         if (typeof obj.onFail === "function") {
                             obj.onFail.call(null, {
                                 code: data.code,
-                                message: data.message
+                                message: data.msg
                             });
                         }
                         reject(data.result);

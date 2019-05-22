@@ -55,7 +55,7 @@ var h5AndroidBridge = function(namespace, callObj) {
 						if (typeof obj.onFail === "function") {
 							obj.onFail.call(null, {
 								code: data.code,
-								message: data.message
+								message: data.msg
 							});
 						}
 						reject(data.result);
